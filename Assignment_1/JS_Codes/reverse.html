@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function reverseSigned8BitInt(x) {
+    const reversed = parseInt(x.toString().split('').reverse().join(''));
+    if (reversed > 2**7 - 1 || reversed < (-2)**7) {
+        return 0;
+    }
+    return reversed;
+}
+document.write(reverseSigned8BitInt(400));
+document.write("\n")
+document.write(reverseSigned8BitInt(1237492));
+    </script>
+</body>
+</html>
