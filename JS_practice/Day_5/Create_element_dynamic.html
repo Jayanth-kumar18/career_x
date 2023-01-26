@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="para">
+        <button onclick="addParagraph()">
+            Click me to add para dynamically
+        </button>
+    </div>
+    <div id="head">
+        <button onclick="addHeading()">
+            Click me to add Head dynamically
+        </button>
+    </div>
+    <script>
+        function addParagraph()
+        {
+        var x=document.getElementById('para');
+        var y=document.createElement('p');
+        y.textContent='This is Para';
+        x.appendChild(y);
+        }
+        function addHeading()
+        {
+        var x=document.getElementById('head');
+        var y=document.createElement('h1');
+        y.textContent='This is Head';
+        x.appendChild(y);
+        }
+    </script>
+</body>
+</html>
+
+

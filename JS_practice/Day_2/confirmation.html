@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getConfirmation(){
+            var x=confirm("Are you sure to confirm");
+            if(x){
+                document.write("Yes he is confirmed");
+            }
+            else{
+                document.write("No he has not confirmed");
+            }
+        }
+    </script>
+    <h1> Add Confirmation?</h1>
+    <button id="jay" onclick="getConfirmation()">
+        Get confirmation
+    </button>
+</body>
+</html>
