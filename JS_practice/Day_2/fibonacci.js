@@ -6,8 +6,8 @@ function fibonacci(n){
     {
         console.log(n2)
         n2=n1+n2;
-        n1=n2-n1
+        n1=n2-n1;
 
     }
 }
-fibonacci(100);
+fibonacci(10);
