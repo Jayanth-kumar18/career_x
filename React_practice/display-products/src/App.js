@@ -30,8 +30,8 @@ function App() {
       {
       products.map(p=>{
         return(
-          <div key={p.id}>  
-            <img src={p.img} alt={p.title}>  </img>
+          <div key={p.id} className="product">  
+            {/* <img src={p.img} alt={p.title} > </img> */}
             <h1> {p.title} </h1>
             <p>  {p.desc}  </p>
             <h2> {p.price} </h2>
