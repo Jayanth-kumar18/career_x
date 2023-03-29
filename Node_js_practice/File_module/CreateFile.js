@@ -1,3 +1,5 @@
+/* a file system is a method and data structure 
+   that the operating system uses to control how data is stored and retrieved. */
 var fs=require('fs');
 var x='hi to all';
 fs.open('my_content.txt','w',function(err){
